@@ -1,0 +1,348 @@
+@font-face
+   font-family: 'Breamcatcher'
+   src: url(../fonts/breamcatcher.ttf)
+
+@font-face
+   font-family: 'Atlantis'
+   src: url(../fonts/Atlantic_Cruise-Demo.ttf)
+   
+$primary: #303F9F
+$light-primary: #BBDEFB
+$white: #f2f2f2
+$divider: #B6B6B6
+$error: #D32F2F
+
+$borde: 2px
+$font-family: "Roboto", Arial
+
+*
+   margin: 0
+   padding: 0
+   -webkit-box-sizing: border-box
+   -moz-box-sizing: border-box
+   box-sizing: border-box
+
+body
+   position: relative
+
+p
+   font: 20px Cambria
+   text-align: justify
+
+.linea-divisoria
+   margin: 80px 0px
+
+.seccion
+   padding-top: 50px
+
+
+
+/* ***BARRA SOCIAL*** */
+.social
+   position: fixed
+   left: 0
+   top: 200px
+   z-index: 2000
+   ul
+      list-style: none
+      li
+         .icon-facebook
+            background: #3b5998
+         .icon-twitter
+            background: #00abf0
+         .icon-google
+            background: #d95232
+         .icon-pinterest
+            background: #ae181f
+         .icon-mail
+            background: #666666
+         a
+            display: inline-block
+            color: white
+            background: black
+            padding: 10px 15px
+            text-decoration: none
+            -webkit-transition: all 500ms ease
+            -o-transition: all 500ms ease
+            transition: all 500ms ease
+            &:hover
+               padding: 10px 30px
+               background: #000
+/* ***FIN BARRA SOCIAL*** */
+
+
+
+/* ***MENU*** */
+#titulo-menu
+   font: 24px Old English Text MT
+   &:hover
+      color: black
+
+#contacto, #verde, #amarrillo, #rojo
+   font: 19px Cambria
+   letter-spacing: 2px
+   -o-transition: all 500ms ease /* Opera */
+   -ms-transition: all 500ms ease /* IE */
+   -moz-transition: all 500ms ease /* Firefox */
+   -webkit-transition: all 500ms ease /* Chrome y Safari */
+   transition: all 500ms ease
+
+#contacto
+   &:hover
+      color: black
+      background: -o-linear-gradient(#007A00, #FFD700, #B22121)
+      background: -ms-linear-gradient(#007A00, #FFD700, #B22121)
+      background: -moz-linear-gradient(#007A00, #FFD700, #B22121)
+      background: -webkit-linear-gradient(#007A00, #FFD700, #B22121)
+      background: linear-gradient(#007A00, #FFD700, #B22121)
+      border-radius: 19px
+
+#verde
+   &:hover
+      color: rgb(0, 122, 0)
+      text-shadow: #C6C6C6 2px 2px 2px
+
+#amarrillo
+   &:hover
+      color: rgb(255, 215, 0)
+      text-shadow: #C6C6C6 2px 2px 2px
+
+#rojo
+   &:hover
+      color: rgb(178, 33, 33)
+      text-shadow: #C6C6C6 2px 2px 2px
+/* ***FIN MENU*** */
+
+
+
+/* ***CAROUSEL*** */
+.mensaje-imagen
+   color: black
+   font-family: Cambria
+   text-shadow: rgb(112,128,144) 2px 2px 2px
+
+#indicador
+   border-color: black
+
+#carousel-1
+   padding-top: 54px
+/* ***FIN CAROUSEL*** */
+
+
+
+/* ***CONSTANCIA E INSPIRACION*** */
+.titulo
+   border-bottom: 8px groove #007A00
+   font: 47px Breamcatcher
+   margin: 0 50px
+
+.valores
+   margin-left: 100px
+   margin-right: 100px
+/* ***FIN CONSTANCIA E INSPIRACION*** */
+
+
+
+/* ***BARRA DE PROGRESO*** */
+.sub-titulo
+   border-bottom: 8px groove #007A00
+   font: 30px Goudy Old Style
+   margin: 0 50px
+
+.progreso
+   margin-left: 35px
+   width: 93%
+
+.estatud
+   font-family: Lucida Bright
+/* ***FIN BARRA DE PROGRESO*** */
+
+
+
+/* ***PRODUCTOS Y SERVICIOS*** */
+.item
+   font-family: Goudy Old Style
+
+.sangria
+   padding-left: 20px
+/* ***FIN PRODUCTOS Y SERVICIOS*** */
+
+
+
+/* ***FORMULARIO*** */
+.wrap
+   width: 90%
+   max-width: 500px
+   padding: 40px
+   margin: auto
+   background: #fff
+   box-shadow: 0px 0px 3px grey
+
+.contenedor-formulario
+   width: 100%
+   color: $white
+   padding: 50px
+   .formulario
+      width: 100%
+      margin: auto
+      .input-grupo
+         position: relative
+         margin-bottom: 32px
+         // background: rgba(#ccc, .2)
+         input[type="text"],
+         input[type="email"],
+         input[type="password"],
+         textarea
+            font-family: $font-family
+            font-size: 16px
+            color: $primary
+            width: 100%
+            outline: none
+            padding: 15px
+            background: none
+            border: none
+            border-bottom: $borde solid $light-primary
+            &:focus,
+            &:active
+               outline: none
+               border-bottom: $borde solid $primary
+            &.error
+               border-bottom: $borde solid $error
+               + label
+                  color: $error
+         label
+            color: $primary
+            &.label
+               position: absolute
+               top: 16px
+               left: 0
+               font-size: 16px
+               line-height: 16px
+               margin-left: 16px
+               -webkit-transition: all .3s ease
+               -o-transition: all .3s ease
+               transition: all .3s ease
+               &.active
+                  top: -12px
+                  font-size: 12px
+                  line-height: 12px
+                  color: $divider
+         &.checkbox label,
+         &.radio label
+            display: inline-block
+            cursor: pointer
+            color: $primary
+            position: relative
+            padding: 5px 15px 5px 51px
+            font-size: 1em
+            border-radius: 3px
+            -webkit-transition: all .3s ease
+            -o-transition: all .3s ease
+            transition: all .3s ease
+            &:hover
+               background: rgba($light-primary, 1)
+            &:before
+               content: ""
+               display: inline-block
+               width: 17px
+               height: 17px
+               position: absolute
+               left: 15px
+               border-radius: 50%
+               background: none
+               border: $borde solid $primary
+         // Clase de error para Checkbox y Radio
+         &.error
+            label
+               color: $error
+               &:hover
+                  background: rgba($error, .2)
+               &:before
+                  border: $borde solid $error
+         &.radio
+            input[type="radio"]
+               display: none
+               &:checked + label:before
+                  display: none
+               &:checked + label
+                  padding: 5px 15px
+                  background: $primary
+                  border-radius: $borde
+                  color: $white
+         &.checkbox
+            label:before 
+               border-radius: 3px
+            input[type="checkbox"]
+               display: none
+               &:checked + label:before
+                  display: none
+               &:checked + label
+                  background: $primary
+                  color: $white
+                  padding: 5px 15px
+      input[type="submit"]
+         background: $primary
+         border-radius: 1px
+         border: $borde solid $white
+         color: #fff
+         cursor: pointer
+         display: inline-block
+         font-family: $font-family
+         font-size: 16px
+         padding: 15px
+         width: 100%
+         -webkit-transition: all .3s ease
+         -o-transition: all .3s ease
+         transition: all .3s ease
+         &:hover
+            background: #1976D2
+/* ***FIN FORMULARIO*** */
+
+
+
+/* ***PIE DE PAGINA*** */
+.pie
+   border-radius: 5px 5px 5px 5px
+   clear: both
+   color: #333333
+   font-size: 90%
+   text-align: center
+   .nombre
+
+      &:hover
+         background: -o-linear-gradient(#007A00, #FFD700, #B22121)
+         background: -ms-linear-gradient(#007A00, #FFD700, #B22121)
+         background: -moz-linear-gradient(#007A00, #FFD700, #B22121)
+         background: -webkit-linear-gradient(#007A00, #FFD700, #B22121)
+         
+         border-radius: 19px
+         color: black
+         cursor: pointer
+
+         -o-transition: all 2s ease /* Opera */
+         -ms-transition: all 2s ease /* IE */
+         -moz-transition: all 2s ease /* Firefox */
+         -webkit-transition: all 2s ease /* Chrome y Safari */
+         transition: all 2s ease
+/* ***FIN PIE DE PAGINA*** */
+
+
+
+#barra-texto
+   font: 13px Calibri
+   padding-top: 7px
+
+#span
+   font: 50px GoudyIni
+
+
+
+@media screen and (max-width: 767px)
+   .sangria2
+      padding-left: 40px
+
+   .imagen-presentacion
+      display: none !important
+
+   .barras
+      padding-left: 50px
